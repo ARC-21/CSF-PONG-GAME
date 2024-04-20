@@ -122,7 +122,7 @@ public class BouncingSquare extends Square implements Animatable
     public int rightCollide(Paddle p) {
         if (getX()+getSide() > p.getX()) {
             if (getY()+getSide() > p.getY() && p.getY() + p.getHeight() > getY()) {
-                if (p.getY() - getY() <= 14) {
+                if (p.getY() - getY() <= 7) {
                     if (getDY() < 0) {
                         setDY(-3);
                     }
@@ -130,7 +130,7 @@ public class BouncingSquare extends Square implements Animatable
                         setDY(3);
                     }
                 }
-                else if (p.getY() + p.getHeight() - getY() <= 28) {
+                else if (p.getY() + p.getHeight() - getY() <= 14) {
                     if (getDY() < 0) {
                         setDY(-2);
                     }
@@ -138,7 +138,7 @@ public class BouncingSquare extends Square implements Animatable
                         setDY(2);
                     }
                 }
-                else if (p.getY() + p.getHeight() - getY() <= 42) {
+                else if (p.getY() + p.getHeight() - getY() <= 56) {
                     if (getDY() < 0) {
                         setDY(-1);
                     }
@@ -146,7 +146,7 @@ public class BouncingSquare extends Square implements Animatable
                         setDY(1);
                     }
                 }
-                else if (p.getY() + p.getHeight() - getY() <= 56) {
+                else if (p.getY() + p.getHeight() - getY() <= 63) {
                     if (getDY() < 0) {
                         setDY(-2);
                     }
